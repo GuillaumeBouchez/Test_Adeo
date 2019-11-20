@@ -1,2 +1,5 @@
+# Git Files #
+.gitignore
+
 # Node Files #
 /node_modules
