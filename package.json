@@ -1,0 +1,14 @@
+{
+  "name": "test_adeo",
+  "version": "1.0.0",
+  "description": "The ADEO test",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
