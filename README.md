@@ -1,6 +1,12 @@
 # Test_Adeo
 Test algorithm for the Adeo test
 
+## Initiate the project
+
+```bash
+# Install node dependencies
+nm install
+
 ## Run the project
 
 ```bash
