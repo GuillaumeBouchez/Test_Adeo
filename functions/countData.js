@@ -10,19 +10,18 @@ const fileData = require('../data')
 function countData () {
     //Get all the data
     let importedData = fileData.data;
-    let result = []
 
-    //Create an object with the length of the people table for each city and  the length of the animals table for each people
-    importedData.forEach(city => {
-        let cityObject = { name: city.name + '[' + city.people.length + ']', people: [] }
-        city.people.forEach(people => {
-            cityObject.people.push({ name: people.name + '[' + people.animals.length + ']', animals: people.animals })
+    //Better option :
+    let result = importedData.map(city => {
+        city.name += '[' + city.people.length + ']';
+        city.people.map(people => {
+            people.name += '[' + people.animals.length + ']';
+            return people;
         })
-        // Push the new Object in the tab
-        result.push(cityObject)
+        return city;
     })
     console.dir(result, { depth: null })
-    return result
+
 }
 
 module.exports = {

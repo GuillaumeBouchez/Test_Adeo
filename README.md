@@ -2,12 +2,13 @@
 Test algorithm for the Adeo test
 
 ## Initiate the project
+
 ```bash
 # Install node dependencies
-npm install
-```
+nm install
 
 ## Run the project
+
 ```bash
 # Filter function
 node app.js --filter=<argument_to_look_for>
@@ -16,6 +17,7 @@ node app.js --count
 ```
 
 ## Tests
+
 ```bash
 # Run the tests
 npm test
